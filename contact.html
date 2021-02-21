@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>Gen Z Resources Inc</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact/form.css" >
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="contact/form.js"></script>
+
+	</head>
+<body>
+	<header>
+       <div class="wrapHead">
+    	<div id="brand">
+    			    <a href="index.html"><div class="divclick clickable"></div></a>
+    	</div>
+    	<nav>
+    	  <ul>
+          <li><a href="index.html">Programs /</a></li>
+          <li><a href="resources.html">Articles /</a></li>
+		<li><a href="aboutus.html">About Us /</a></li>
+          <li><a href="contact.html" class="currentlyactive">Contact Us /</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="content">
+	 <div class="col-md-12" id="form_container">
+		<h2>Contact Us</h2>
+		<p> Please send your message below. We will get back to you at the earliest! </p>
+	</br>
+		<form role="form" method="post" id="reused_form">
+		    <div class="row">
+			  <label for="message"> Message:</label>
+			  <textarea class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
+		    </div>
+		    <div class="row">
+			  <label for="name"> Your Name:</label>
+			  <input type="text" class="form-control" id="name" name="name" required>
+
+			  <label for="email"> Email:</label>
+			  <input type="email" class="form-control" id="email" name="email" required>
+		    </div>
+		    <div class="row">
+			   <div class="col-sm-1 form-group">
+				  <button type="submit" class="submitbutton" >Send</button>
+			   </div>
+		    </div>
+		</form>
+		<div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your message successfully!</h3> </div>
+		<div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+	 </div>
+
+	 <hr class="solid"></hr>
+
+ </br>
+ 	   <footer>
+ 		  <div class="footer">
+ 			  <div class="footrow">
+ 				  <a id="notextdec" href="https://www.linkedin.com/company/generationzresources"><i class="fa fa-linkedin"></i></a>
+ 				  <a id="notextdec" href="https://www.instagram.com/generationzresources/?hl=en"><i class="fa fa-instagram"></i></a>
+ 				  <!-- <a href="#"><i class="fa fa-youtube"></i></a>-->
+ 				  <a id="notextdec" href="https://twitter.com/GZR_Official"><i class="fa fa-twitter"></i></a>
+ 			  </div>
+ 			  <div class="footrow">
+ 			  	Generation Z Resources Inc. &nbsp;&nbsp;Copyright © 2021 GRZ - All rights reserved || Designed By: <a id="notextdec" href="https://www.chrisqin.ca/">Chris Qin</a>
+ 			  </div>
+ 		  </div>
+ 	  </footer>
+
+	</div>
+
+</body>
+</html>

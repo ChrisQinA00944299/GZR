@@ -1,0 +1,201 @@
+input[type="radio"] {
+    display:none;
+}
+
+body {
+     background-color: #d9d9d9;
+}
+
+label {
+  width:19%;
+  float:left;
+  text-align:center;
+  vertical-align: middle;
+  font-family: 'Archivo Black';
+  font-size: 30px;
+  background:#d9d9d9;
+  color: #000000;
+  padding:0.5%;
+  margin:0.5%;
+  margin-bottom:30px;
+  cursor:pointer;
+}
+
+label:hover {
+  background-color: #c0c0c0;
+}
+
+/*--------All--------*/
+input[type="radio"][id="reset"] + label {
+  width:8%;
+  margin-left: 4.5vh;
+}
+input[type="radio"][id="reset"]:checked + label {
+  background:#11bb02;
+}
+
+#pricing .container {
+     height: 100%;
+     background-color: #d9d9d9;
+}
+
+.searcharea {
+     position:relative;
+     height: 60px;
+     background-color: #d9d9d9;
+}
+
+.searchbar {
+     position: absolute;
+     line-height: 40px;
+     border-radius: 3px;
+     width:300px;
+     padding-left: 10px;
+     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+     bottom:0;
+     right: 2%;
+}
+
+.topleftad {
+     display: block;
+     width: 66.7%;
+     height: 100px;
+     background-color: red;
+     margin: 20px;
+     z-index: 20;
+}
+
+#pricing {
+  background: #d9d9d9;
+}
+
+label img {
+  width:auto;
+  height:25px;
+}
+
+.slidernav label {
+  float: none;
+  text-align:center;
+  background:#A6A6A6;
+  margin-bottom:0;
+}
+
+/*--------Math--------*/
+input[type="radio"][id="blue"]:checked + label {
+  /* border: 2px #11bb02 solid;
+  box-sizing: border-box; */
+  background:#11bb02;
+}
+input[type="radio"][id="blue"]:checked ~ .red, input[type="radio"][id="blue"]:checked ~ .pink, input[type="radio"][id="blue"]:checked ~ .orange {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+  display: none;
+}
+
+
+/*--------Science--------*/
+input[type="radio"][id="red"]:checked + label {
+  /* border: 2px #11bb02 solid;
+  box-sizing: border-box; */
+  background:#11bb02;
+}
+input[type="radio"][id="red"]:checked ~ .blue, input[type="radio"][id="red"]:checked ~ .pink, input[type="radio"][id="red"]:checked ~ .orange {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+  display: none;
+}
+
+
+/*--------English--------*/
+input[type="radio"][id="pink"]:checked + label {
+  /* border: 2px #11bb02 solid;
+  box-sizing: border-box; */
+  background:#11bb02;
+}
+input[type="radio"][id="pink"]:checked ~ .blue, input[type="radio"][id="pink"]:checked ~ .red, input[type="radio"][id="pink"]:checked ~ .orange {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+  display: none;
+}
+
+
+/*--------Social Studies--------*/
+input[type="radio"][id="orange"]:checked + label {
+  /* border: 2px #11bb02 solid;
+  box-sizing: border-box; */
+  background:#11bb02;
+}
+input[type="radio"][id="orange"]:checked ~ .blue, input[type="radio"][id="orange"]:checked ~ .red, input[type="radio"][id="orange"]:checked ~ .pink {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+  display: none;
+}
+
+.tile {
+  width:32.3%;
+  height:150px;
+  float:left;
+  color: black;
+  padding: 0.5%;
+  margin: 0.5%;
+}
+
+.tile p {
+     display: inline;
+}
+.tile img {
+     width: 125px;
+     vertical-align: top;
+     margin-right: 10px;
+     float:left;
+}
+
+.tile .articletitle {
+     font-size:20px;
+     font-family: 'Archivo Black';
+     font-weight: bold;
+}
+
+.tile .articledescription {
+     font-size:15px;
+     font-family: 'Roboto';
+     color: #d9d9d9;
+}
+
+.pink {
+  background:#ffffff;
+  box-sizing: border-box;
+  border: 4px #EC5578 solid;
+  border-radius: 3px;
+}
+.blue {
+  background:#ffffff;
+  box-sizing: border-box;
+  border: 4px #013C58 solid;
+  border-radius: 3px;
+}
+.red {
+  background:#ffffff;
+  box-sizing: border-box;
+  border: 4px #65000B solid;
+  border-radius: 3px;
+}
+.orange {
+  background:#ffffff;
+  box-sizing: border-box;
+  border: 4px #DD571C solid;
+  border-radius: 3px;
+}

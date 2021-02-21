@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Gen Z Resources Inc</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans&display=swap">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="banner.css" />
+		<link rel="stylesheet" href="featured.css" />
+		<link rel="stylesheet" href="filter.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+<body>
+	 <!--~~~~~~~~~~~~~~~~~~~~Header~~~~~~~~~~~~~~~~~~~~-->
+  <header>
+    <div class="wrapHead">
+      <div id="brand">
+		<a href="index.html"><div class="divclick clickable"></div></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="currentlyactive">Programs /</a></li>
+          <li><a href="resources.html">Articles /</a></li>
+		<li><a href="aboutus.html">About Us /</a></li>
+		<li><a href="contact.html">Contact Us /</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <!--~~~~~~~~~~~~~~~~~~~~End of Header~~~~~~~~~~~~~~~~~~~~-->
+
+  <div class="content">
+
+	      <!--~~~~~~~~~~~~~~~~~~~~Image Slider~~~~~~~~~~~~~~~~~~~~-->
+	  <div id="banner">
+		<div class="container">
+
+	      <input type="radio" name="images" id="img1" />
+	      <input type="radio" name="images" id="img2" />
+	      <input type="radio" name="images" id="img3" />
+
+		 	<!--~~~~~First Image (showing on landing page)~~~~~-->
+	      <div class="slide one">
+	        <img src="images/GZR.jpg" alt=""/>
+	        <label for="img3" class="pre"></label>
+	        <label for="img2" class="next"></label>
+	      </div>
+
+		 	<!--~~~~~Second Image~~~~~-->
+	      <div class="slide two">
+	        <img src="images/english.jpg" alt=""/>
+	        <label for="img1" class="pre"></label>
+	        <label for="img3" class="next"></label>
+	      </div>
+
+		 	<!--~~~~~Third Image~~~~~-->
+	      <div class="slide three">
+	        <img src="images/math.jpg" alt="" />
+	        <label for="img2" class="pre"></label>
+	        <label for="img1" class="next"></label>
+	      </div>
+
+		 	<!--~~~~~The three dots at the bottom~~~~~-->
+	      <div class="slidernav">
+	        <label for="img1" class="dots" id="dot1"></label>
+	        <label for="img2" class="dots" id="dot2"></label>
+	        <label for="img3" class="dots" id="dot3"></label>
+	      </div>
+	    </div>
+	</div>
+		</br>
+
+		 <!--~~~~~~~~~~~~~~~~~~~~Video Viewing Sectionr~~~~~~~~~~~~~~~~~~~~-->
+		 <h1><span>Featured Videos</span></h1>
+
+
+	  <div id="about">
+			<div class="video-wrapper">
+				<div class="video-container">
+					<iframe src="https://www.youtube.com/embed/BxWD0GRK5Ag" width="640" height="360" frameborder="0"></iframe>
+				</div>
+
+			</div>
+			<div id="contact">
+			  <h2>Video Description Here</h2>
+		  </br>
+			  <p>Video description goes here. Lorem Ipsum.</p>
+			</div>
+	  </div>
+
+	  <h1><span>Featured Articles</span></h1>
+
+	<div class="featuredarticles">
+
+	  <div class="adbanner">AD 1</div>
+
+	  <div class="feature-story">
+           <a href="2014/02/climate-science-conference.html">
+             <img alt="${image-alt}" src="images/english.png">
+           </a>
+           <h2><a href="2014/02/climate-science-conference.html">English Article</a></h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+           </p>
+       </div>
+
+	  <div class="feature-story">
+           <a href="2014/02/climate-science-conference.html">
+             <img alt="${image-alt}" src="images/science.png">
+           </a>
+           <h2><a href="2014/02/climate-science-conference.html">Science Article</a></h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+           </p>
+       </div>
+
+	  	  <div class="adbanner">AD 2</div>
+
+	  <div class="feature-story">
+           <a href="2014/02/climate-science-conference.html">
+             <img alt="${image-alt}" src="images/math.png">
+           </a>
+           <h2><a href="2014/02/climate-science-conference.html">Math Article</a></h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+           </p>
+       </div>
+
+  </div>
+
+	<hr class="solid"></hr>
+
+</br>
+	   <footer>
+		  <div class="footer">
+			  <div class="footrow">
+				  <a id="notextdec" href="https://www.linkedin.com/company/generationzresources"><i class="fa fa-linkedin"></i></a>
+				  <a id="notextdec" href="https://www.instagram.com/generationzresources/?hl=en"><i class="fa fa-instagram"></i></a>
+				  <!-- <a href="#"><i class="fa fa-youtube"></i></a> -->
+				  <a id="notextdec" href="https://twitter.com/GZR_Official"><i class="fa fa-twitter"></i></a>
+			  </div>
+			  <div class="footrow">
+			  	Generation Z Resources Inc. &nbsp;&nbsp;Copyright © 2021 GRZ - All rights reserved || Designed By: <a id="notextdec" href="https://www.chrisqin.ca/">Chris Qin</a>
+			  </div>
+		  </div>
+	  </footer>
+
+
+	</div>
+
+
+</body>
+</html>

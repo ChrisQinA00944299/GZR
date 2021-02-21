@@ -1,0 +1,76 @@
+
+#form_container
+{
+	background-color: #d9d9d9;
+	margin: auto;
+	color:#000;
+	padding: 20px;
+}
+
+h2 {
+  font-family: 'Archivo Black';
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+
+.row {
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 18px;
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.submitbutton {
+  background-color: #11bb02;
+  border: none;
+  padding: 15px 35px;
+  font-size: 26px;
+  font-family: 'Archivo Black';
+}
+
+.submitbutton:hover {
+	background-color: #c0c0c0;
+	color: #fff;
+}
+
+.upload-btn-wrapper
+{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file]
+{
+  font-size: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}

@@ -1,0 +1,98 @@
+#banner .container {
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 40%;
+  background-color: #ffffff;
+}
+
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow:  0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.slide img {
+  width: auto;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* RADIO INPUT */
+#img1,
+#img2,
+#img3 {
+  display: none;
+}
+
+.pre,
+.next {
+  width: 5%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  color: #d9d9d9;
+  opacity: 0.5;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.pre {
+  left: -7px;
+  top: -20.5px;
+}
+
+.next {
+  right: -7px;
+  top: -20.5px;
+}
+
+/* DOTS STYLES */
+
+.slidernav {
+  width: 100%;
+  height: 5px;
+  bottom: 8%;
+  position: absolute;
+  text-align: center;
+  z-index: 55;
+}
+
+.dots {
+  bottom: -10px;
+  width: 2px;
+  height: 2px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 50%;
+  border: black 0.5px solid;
+  display: inline-block;
+  background: grey;
+}
+
+.one {
+  z-index: 55;
+}
+
+.two,
+.three {
+  z-index: -1;
+}
+
+#img1:checked ~ .one,
+#img2:checked ~ .two,
+#img3:checked ~ .three {
+  z-index: 55;
+}
+
+#img1:checked ~ .slidernav #dot1,
+#img2:checked ~ .slidernav #dot2,
+#img3:checked ~ .slidernav #dot3 {
+  background: #11bb02;
+}
