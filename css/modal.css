@@ -59,41 +59,6 @@
   margin-right: 5px;
   font-family: 'Roboto';
 }
-
-/* .author{
-  width: 100%;
-  height: 60px;
-  background-color: #F2F5F8;
-  margin-left: 20px;
-  margin-top: 5px;
-  border-radius: 10px;
-}
-
-.author-content{
-  width: 60%;
-  height: 60px;
-  margin-left: 10px;
-  float: left;
-}
-
-.author-image{
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  float: left;
-  margin-left: 10px;
-  margin-top: 5px;
-}
-
-.author-name{
-  font-size: 20px;
-  color: #3B3C3F;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  margin-top: 10px;
-  padding-left: 10px;
-} */
-
 .aboutcompany {
   height:70vh;
   color: #000;
@@ -120,14 +85,14 @@
 }
 
 .left-half {
-  background-image: url("images/ornntest.jpg");
+  background-image: url("../images/ornntest.jpg");
   background-size: cover;
   flex: 1;
   padding: 1rem;
 }
 
 .right-half {
-  background-image: url("images/apostrophe.png");
+  background-image: url("../images/apostrophe.png");
   background-size: cover;
   flex: 1;
   text-align: justify;
@@ -157,8 +122,7 @@
 	 opacity: 1;
 	 pointer-events: auto;
 }
- .modal-window > div {
-	 width: 500px;
+ .modal-window .teamprofiles, .modal-window .article-window {
       max-height: 70%;
 	 position: absolute;
       overflow: auto;
@@ -168,6 +132,15 @@
 	 padding: 2em;
 	 background: white;
 }
+
+.teamprofiles {
+     width: 500px;
+}
+
+.article-window {
+     width: 75%;
+}
+
  .modal-window header {
 	 font-weight: bold;
 }
@@ -200,6 +173,10 @@
       text-align: center;
 }
 
+.modal-window h4 {
+     text-align: center;
+}
+
  .modal-window img {
       width: 400px;
       margin: 0 auto;
@@ -214,11 +191,19 @@
      font-weight: bold;
 }
 
-.modal-windows .descriptions {
+.modal-windows .descriptions, {
      font-size: 16px;
      color: black;
      font-family: 'Roboto';
      line-height: 25px;
+}
+
+.article-window .descriptions {
+     font-size: 25px;
+     color: black;
+     font-weight: bold;
+     font-family: 'Roboto';
+     line-height: 50px;
 }
 
 .modal-window > div::-webkit-scrollbar {
@@ -254,6 +239,21 @@
      font-size: 200%;
      font-weight: bold;
      color: #11bb02;
+}
+
+.articletext {
+     float: left;
+     width: 60%;
+}
+
+.articleimage {
+     display: inline;
+     width: 25%;
+     overflow-x: auto;
+}
+
+.articleimage img {
+
 }
 
 strong {

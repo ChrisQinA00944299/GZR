@@ -22,7 +22,7 @@ header{
   width: 100%;
   height: 152px;
   margin-top: -152px;
-  background: url("images/ShortLines.png") bottom left no-repeat, url("images/longlines.png") top right no-repeat, url("images/ThickBanner.png") repeat;
+  background: url("../images/ShortLines.png") bottom left no-repeat, url("../images/longlines.png") top right no-repeat, url("../images/ThickBanner.png") repeat;
   background-color: #d9d9d9;
   z-index: 99;
   /* transition: all ease-in-out 0.5s; */
@@ -35,7 +35,7 @@ header:after{
 header.fixed-to-top{
   height:62px;
   line-height: 62px;
-  background:  url("images/ThinBanner.png") repeat;
+  background:  url("../images/ThinBanner.png") repeat;
   background-color: #d9d9d9;
 }
 
@@ -49,7 +49,7 @@ header.fixed-to-top{
   height: 50px;
   margin-left: 10px;
   margin-top: 40px;
-  background-image: url('images/GRZCapLogo.png');
+  background-image: url('../images/GRZCapLogo.png');
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1000;
@@ -76,7 +76,7 @@ header.fixed-to-top{
   margin-top: 0px;
   width: 100px;
   height: 60px;
-  background-image: url('images/GZRlogo.png');
+  background-image: url('../images/GZRlogo.png');
   background-size: cover;
   background-repeat: no-repeat;
   /* transition: all ease-in-out 0.5s; */

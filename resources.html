@@ -11,11 +11,12 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans&display=swap">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="filter.css" />
+		<link rel="stylesheet" href="css/filter.css" />
+    		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/modal.css" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="script.js"></script>
-		<script src="search.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/search.js"></script>
 	</head>
 <body>
   <header>
@@ -39,7 +40,7 @@
 	  <div class="searcharea">
 	   <input class="searchbar" type="text" id="filtersearch" value="" placeholder="Search Articles"/>
    	  </div>
-	  	<div class="container">
+	  	<div class="container" id="list">
 		  <input type="radio" id="reset" name="color"/>
 		  <label for="reset">All</label>
 		  <input type="radio" id="blue" name="color" />
@@ -50,70 +51,104 @@
 		  <label for="pink"><img src="images/English.png"/>&nbsp;English</label>
 		  <input type="radio" id="orange" name="color"/>
 		  <label for="orange"><img src="images/Social Studies.png"/>&nbsp;Social Studies</label>
-	  	<div id="list">
-			<div class="tile blue">
-   		       <!-- <img src="images/placeholder.jpg"></img>
-   		       <span class="articletitle">Article #1</span>
-   		       <span class="articledescription">Written by: <strong>John Doe</strong></br>Jan 01, 2021</span> -->
+
+
+		  <div class="tile blue" id="clicked">
+		       <img src="images/placeholder.jpg"></img>
+		  	  <p>
+		       <span class="articletitle"><a href="#article">Article #1</a></span></br>
+		       <span class="articledescription">Written by: <b class="darkenbold">John Doe</b></br><i>Jan 01, 2021</i></span></br>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+			  </p>
+		          </div>
+   		  <div class="tile red" id="clicked">
+   		       <img src="images/placeholder.jpg"></img>
+			  <p>
+   		       <span class="articletitle"><a href="#article">Article #2</a></span></br>
+   		       <span class="articledescription">Written by: <b class="darkenbold">John Doe</b></br><i>Jan 01, 2021</i></span></br>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+			  </p>
    		          </div>
-   		  <div class="tile red">
-   		       <!-- <img src="images/placeholder.jpg"></img>
-   		       <span class="articletitle">Article #2</span>
-   		       <span class="articledescription">Written by: <strong>John Doe</strong></br>Jan 01, 2021</span> -->
+   		  <div class="tile blue" id="clicked">
+   		       <img src="images/placeholder.jpg"></img>
+			  <p>
+   		       <span class="articletitle"><a href="#article">Article #3</a></span></br>
+   		       <span class="articledescription">Written by: <b class="darkenbold">John Doe</b></br><i>Jan 01, 2021</i></span></br>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+			  </p>
    		          </div>
-   		  <div class="tile blue">
-   		       <!-- <img src="images/placeholder.jpg"></img>
-   		       <span class="articletitle">Article #3</span>
-   		       <span class="articledescription">Written by: <strong>John Doe</strong></br>Jan 01, 2021</span> -->
+   		  <div class="tile pink" id="clicked">
+   		       <img src="images/placeholder.jpg"></img>
+			  <p>
+   		       <span class="articletitle"><a href="#article">Article #4</a></span></br>
+   		       <span class="articledescription">Written by: <b class="darkenbold">John Doe</b></br><i>Jan 01, 2021</i></span></br>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+			  </p>
    		          </div>
-   		  <div class="tile pink">
-   		       <!-- <img src="images/placeholder.jpg"></img>
-   		       <span class="articletitle">Article #4</span>
-   		       <span class="articledescription">Written by: <strong>John Doe</strong></br>Jan 01, 2021</span> -->
+   		  <div class="tile blue" id="clicked">
+   		       <img src="images/placeholder.jpg"></img>
+			  <p>
+   		       <span class="articletitle"><a href="#article">Article #5</a></span></br>
+   		       <span class="articledescription">Written by: <b class="darkenbold">John Doe</b></br><i>Jan 01, 2021</i></span></br>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+			  </p>
    		          </div>
-   		  <div class="tile blue">
-   		       <!-- <img src="images/placeholder.jpg"></img>
-   		       <span class="articletitle">Article #5</span>
-   		       <span class="articledescription">Written by: <strong>John Doe</strong></br>Jan 01, 2021</span> -->
+   		  <div class="tile red" id="clicked">
+   		       <img src="images/placeholder.jpg"></img>
+			  <p>
+   		       <span class="articletitle"><a href="#article">Article #6</a></span></br>
+   		       <span class="articledescription">Written by: <b class="darkenbold">John Doe</b></br><i>Jan 01, 2021</i></span></br>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+			  </p>
    		          </div>
-   		  <div class="tile red">
-   		       <!-- <img src="images/placeholder.jpg"></img>
-   		       <span class="articletitle">Article #6</span>
-   		       <span class="articledescription">Written by: <strong>John Doe</strong></br>Jan 01, 2021</span> -->
+   		  <div class="tile orange" id="clicked">
+   		       <img src="images/placeholder.jpg"></img>
+			  <p>
+   		       <span class="articletitle"><a href="#article">Article #7</a></span></br>
+   		       <span class="articledescription">Written by: <b class="darkenbold">John Doe</b></br><i>Jan 01, 2021</i></span></br>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+			  </p>
    		          </div>
-   		  <div class="tile orange">
-   		       <!-- <img src="images/placeholder.jpg"></img>
-   		       <span class="articletitle">Article #7</span>
-   		       <span class="articledescription">Written by: <strong>John Doe</strong></br>Jan 01, 2021</span> -->
+   		  <div class="tile pink" id="clicked">
+   		       <img src="images/placeholder.jpg"></img>
+			  <p>
+   		       <span class="articletitle"><a href="#article">Article #8</a></span></br>
+   		       <span class="articledescription">Written by: <b class="darkenbold">John Doe</b></br><i><i>Jan 01, 2021</i></i></span></br>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+		  	  </p>
    		          </div>
-   		  <div class="tile pink">
-   		       <!-- <img src="images/placeholder.jpg"></img>
-   		       <span class="articletitle">Article #8</span>
-   		       <span class="articledescription">Written by: <strong>John Doe</strong></br>Jan 01, 2021</span> -->
+   		  <div class="tile orange" id="clicked">
+   		       <img src="images/placeholder.jpg"></img>
+			  <p>
+   		       <span class="articletitle"><a href="#article">Article #9</a></span></br>
+   		       <span class="articledescription">Written by: <b class="darkenbold">John Doe</b></br><i><i>Jan 01, 2021</i></i></span></br>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+		  	  </p>
    		          </div>
-   		  <div class="tile orange">
-   		       <!-- <img src="images/placeholder.jpg"></img>
-   		       <span class="articletitle">Article #9</span>
-   		       <span class="articledescription">Written by: <strong>John Doe</strong></br>Jan 01, 2021</span> -->
-   		          </div>
-   		  <div class="tile pink">
-   		       <!-- <img src="images/placeholder.jpg"></img>
+   		  <div class="tile pink" id="clicked">
+   		       <img src="images/placeholder.jpg"></img>
    		       <p>
-   		       <span class="articletitle">Article #10</span></br>
-   		       <span class="articledescription">Written by: <strong>John Doe</strong></br>Jan 01, 2021</span>
-   		       </p> -->
+   		       <span class="articletitle"><a href="#article">Article #10</a></span></br>
+   		       <span class="articledescription">Written by: <b class="darkenbold">John Doe</b></br><i><i>Jan 01, 2021</i></i></span></br>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+   		       </p>
    		          </div>
-   		  <div class="tile red">
-   		       <!-- <img src="images/placeholder.jpg"></img>
-   		       <span class="articletitle">Article #11</span>
-   		       <span class="articledescription">Written by: <strong>John Doe</strong></br>Jan 01, 2021</span> -->
+   		  <div class="tile red" id="clicked">
+   		       <img src="images/placeholder.jpg"></img>
+			  <p>
+   		       <span class="articletitle"><a href="#article">Article #11</a></span></br>
+   		       <span class="articledescription">Written by: <b class="darkenbold">John Doe</b></br><i><i>Jan 01, 2021</i></i></span></br>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+		  	  </p>
    		          </div>
-   		  <div class="tile pink">
-   		       <!-- <img src="images/placeholder.jpg"></img>
-   		       <span class="articletitle">Article #12</span>
-   		       <span class="articledescription">Written by: <strong>John Doe</strong></br>Jan 01, 2021</span> -->
+   		  <div class="tile pink" id="clicked">
+   		       <img src="images/placeholder.jpg"></img>
+			  <p>
+   		       <span class="articletitle"><a href=""><a href="#article">Article #12</a></a></span></br>
+   		       <span class="articledescription">Written by: <b class="darkenbold">John Doe</b></br><i><i>Jan 01, 2021</i></i></span></br>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  	  </p>
    		          </div>
-	  	</div>
 	   </div>
 	  </div>
 
@@ -133,6 +168,33 @@
   			  </div>
   		  </div>
   	  </footer>
+
+	  <div id="article" class="modal-window">
+		  <div class="article-window">
+		    <a href="#clicked" title="Close" class="modal-close"><strong>X</strong></a>
+		    <h2>Article Name</h2>
+		    <h4>Article Description</h4>
+	    </br><img src="images/science.jpg"></img></br><span class="descriptions">What this article is about</span></br>
+
+		    <p class="articletext">
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	    	    </p>
+	    </br>
+		    <p class="articletext">
+			    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		    </p>
+		    <div class="articleimage"><img src="images/placeholder.jpg"/></div>
+		    </div>
+	  </div>
 
   </div>
 

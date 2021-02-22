@@ -169,6 +169,10 @@ input[type="radio"][id="orange"]:checked ~ .blue, input[type="radio"][id="orange
      font-weight: bold;
 }
 
+.tile .articletitle a {
+     text-decoration: none;
+}
+
 .tile .articledescription {
      font-size:15px;
      font-family: 'Roboto';
@@ -198,4 +202,8 @@ input[type="radio"][id="orange"]:checked ~ .blue, input[type="radio"][id="orange
   box-sizing: border-box;
   border: 4px #DD571C solid;
   border-radius: 3px;
+}
+
+.darkenbold {
+  color: #c0c0c0;
 }
